@@ -1,0 +1,594 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+img {
+	max-width: 100%;
+}
+
+@font-face {
+  font-family: 'HalvarBreit';
+  src: local('HalvarBreit-Lt'),
+  url("../fonts/HalvarBreit-Lt.ttf") format("ttf"),
+	url("../fonts/HalvarBreit-Lt.woff") format("woff"),
+	url("../fonts/HalvarBreit-Lt.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'EurostileRound';
+  src: local('EurostileRound-Medium'),
+  url("../fonts/EurostileRoundExtended-Medium.ttf") format("ttf"),
+	url("../fonts/EurostileRoundExtended-Medium.woff") format("woff"),
+	url("../fonts/EurostileRoundExtended-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+	margin: 0;
+	font-family: 'HalvarBreit', sans-serif;
+	background-color: #101010;
+	color: #fff;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p {
+	margin: 0;
+	padding: 0;
+}
+
+.flex {
+	display: flex;
+}
+
+.btn-reset {
+	padding: 0;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.header { 
+	margin-bottom: 77px;
+	background-color: #1A191B;
+}
+
+.container {
+	max-width: 1440px;
+	padding: 0px 60px;
+	margin: 0 auto;
+}
+
+.header-block {
+	align-items: center;
+	padding-top: 24px;
+	padding-bottom: 24px;
+}
+
+.header-logo {
+	max-width: 168px;
+	margin-right: 68px;
+}
+
+.header-navigation {
+	margin-right: 60px;
+}
+
+.header__link {
+	font-family: 'HalvarBreit';
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 18.53px;
+	color: #fff;
+}
+
+.header-navigation-link:not(:last-child) {
+	margin-right: 36px;
+}
+
+.header__link__cards {
+	padding: 40px 18px 40px 25px;
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+.header-social {
+	margin-right: 37px;
+}
+
+.header-social__link:not(:last-child) {
+	margin-right: 20px;
+}
+
+.header-btn {
+	padding: 18px 29px;
+	border: 1.46px solid #fff;
+	border-radius: 7.28px;
+	text-transform: uppercase;
+	font-weight: 400; 
+	font-size: 13.11px;
+	line-height: 15.18px;
+	color: #fff;
+	letter-spacing: 1px;
+}
+
+.first-section {
+	margin-bottom: 192px;
+}
+
+.first-section__title {
+	margin-right: 27px;
+	margin-bottom: 30px;
+	max-width: 640px;
+	font-family: 'EurostileRound';
+	font-weight: 500;
+	font-size: 54px;
+	line-height: 81px;
+	text-transform: uppercase;
+}
+
+.first-section__descr {
+	margin-bottom: 50px;
+	position: relative;
+	max-width: 530px;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 28px;
+	text-transform: capitalize;
+}
+
+.first-section__left__btn {
+	margin-left: 400px;
+	width: 200px;
+	height: 200px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 28px;
+	align-items: center;
+	color: #fff;
+	text-transform: capitalize;
+}
+
+.first-section__right {
+	position: relative;
+}
+
+.club-card__platinum {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	position: absolute;
+	z-index: 4;
+	padding: 26px 26px 19px 26px;
+	width: 417px;
+	height: 238.47px;
+	border-radius: 13.03px;
+	background-color: #222123;
+	box-shadow: 3px 3px #1A191B;
+}
+
+.platinum-title {
+	text-align: right;
+	font-family: 'EurostileRound';
+	font-weight: 500;
+	font-size: 18.24px;
+	line-height: 27.37px;
+	text-transform: uppercase;
+}
+
+.platinum-text {
+	font-family: 'EurostileRound';
+	font-weight: 500;
+	font-size: 13.03px;
+	line-height: 19.55px;
+	text-transform: uppercase;
+}
+
+.club-card__gold {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	position: absolute;
+	top: 125px;
+	left: 252px;
+	z-index: 3;
+	padding: 24px 24px 18px 24px;
+	width: 381px;
+	height: 217.88px;
+	border-radius: 11.91px;
+	background-color: #222123;
+	box-shadow: 0px 3px 3px 0px #1A191B;
+}
+
+.gold-title {
+	text-align: right;
+	font-family: 'EurostileRound';
+	font-weight: 500;
+	font-size: 16.67px;
+	line-height: 25px;
+	text-transform: uppercase;
+	color: #000;
+}
+
+.gold-text {
+	font-family: 'EurostileRound';
+	font-weight: 500;
+	font-size: 11.91px;
+	line-height: 17.86px;
+	text-transform: uppercase;
+}
+
+.club-card__silver {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	position: absolute;
+	top: 290px;
+	left: 46px;
+	z-index: 2;
+	padding: 22px 22px 16px 22px;
+	width: 355px;
+	height: 203px;
+	border-radius: 11.09px;
+	background-color: #222123;
+	box-shadow: 3px 3px #1A191B;
+}
+
+.silver-text {
+	font-family: 'EurostileRound';
+	font-weight: 500;
+	font-size: 11.09px;
+	line-height: 16.64px;
+	text-transform: uppercase;
+}
+
+.club-card__standard {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	position: absolute;
+	top: 405px;
+	left: 252px;
+	z-index: 1;
+	padding: 21.25px 21.25px 16px 21.25px;
+	width: 340px;
+	height: 195px;
+	border-radius: 10.63px;
+	background-color: #222123;
+}
+
+.standard-title {
+	text-align: right;
+	font-family: 'EurostileRound';
+	font-weight: 500;
+	font-size: 14.88px;
+	line-height: 22.31px;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.standard-text {
+	font-family: 'EurostileRound';
+	font-weight: 500;
+	font-size: 10.63px;
+	line-height: 15.94px;
+	text-transform: uppercase;
+}
+
+.second-section {
+	margin-bottom: 150px;
+}
+
+.second-section-list {
+	background-image: url(../img/line.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	align-items: center;
+	text-align: center;
+}
+
+.second-section-list__item {
+	width: 300px;
+}
+
+.second-section__title {
+	width: 100%;
+	margin-bottom: 62px;
+	padding: 0px 150px;
+	text-align: center;
+	font-family: 'EurostileRound';
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 48px;
+	text-transform: uppercase;
+}
+
+.second-section-list__title {
+	font-family: 'EurostileRound';
+	font-weight: 500;
+	font-size: 22px;
+	line-height: 28px;
+	text-transform: capitalize;
+}
+
+.second-section-list__price {
+	margin-bottom: 10px;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 28px;
+	color: rgba(255, 255, 255, 0.6);
+	text-decoration: line-through;
+	text-transform: capitalize;
+}
+
+.second-section-list__discount {
+	width: 300px;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 28px;
+	text-transform: capitalize;
+}
+
+.title-rr {
+	margin-bottom: 45px;
+}
+
+.second-section-list__img__rr {
+	margin-bottom: 12px;
+}
+
+.title-mb {
+	margin-bottom: 23px;
+}
+
+.second-section-list__img__mb {
+	margin-bottom: 3px;
+}
+
+.title-dc {
+	margin-bottom: 31px;
+}
+
+.second-section-list__img__dc {
+	margin-bottom: 25px;
+}
+
+.second-section-list__btn {
+	padding: 61px 35px;
+	width: 227px;
+	height: 227px;
+	border-radius: 50%;
+	background-color: #222123;
+}
+
+.second-section-list__btn__title {
+	margin-bottom: 10px;
+	font-family: 'EurostileRound';
+	font-weight: 500;
+	font-size: 36px;
+	line-height: 22px;
+	color: #fff;
+	text-align: center;
+}
+
+.second-section-list__btn__descr {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 22px;
+	text-align: center;
+	color: #fff;
+}
+
+.second-section-list__item:not(:last-child) {
+	margin-right: 40px;
+}
+
+.last-section__title {
+	margin-bottom: 26px;
+	font-family: 'EurostileRound';
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 48px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.last-section__descr {
+	margin-bottom: 60px;
+	padding: 0px 255px;
+	width: 100%;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 28px;
+	align-items: center;
+	text-align: center;
+	text-transform: capitalize;
+}
+
+.last-section-cards__list {
+	flex-wrap: nowrap;
+	overflow-x: scroll;
+	gap: 40px;
+}
+
+.last-section-cards__list::-webkit-scrollbar {
+	width: 0;
+}
+
+.last-section-cards__item {
+	min-width: 640px;
+	height: 366px;
+	border-radius: 20px;
+	background-color: #222123;
+}
+
+.cards-premium {
+	position: relative;
+	padding: 35px 40px;
+}
+
+.last-section-cards__title {
+	position: absolute;
+	top: 35px;
+	right: 40px;
+	font-family: 'EurostileRound';
+	font-weight: 500;
+	font-size: 28px;
+	line-height: 42px;
+	text-transform: uppercase;
+}
+
+.last-section-cards__text {
+	position: absolute;
+	bottom: 30px;
+	left: 40px;
+	font-family: 'EurostileRound';
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+
+.cards-info {
+	padding: 30px 50px 40px 30px;
+	position: relative;
+}
+
+.last-section-cards__info__title {
+	margin-bottom: 4px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 28px;
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.last-section-cards__info__text {
+	margin-bottom: 20px;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 28px;
+	text-transform: capitalize;
+}
+
+.last-section-cards__btn {
+	padding: 25px 48px;
+	position: absolute;
+	bottom: 30px;
+	right: 50px;
+	border: 2px solid rgba(255, 255, 255, 1);
+	border-radius: 10px;
+	background-color: rgba(34, 33, 35, 1);
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 20.84px;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.last-section-cards__information__card {
+	position: absolute;
+	top: 37px;
+	right: 61px;
+}
+
+.last-section-cards {
+	margin-bottom: 120px;
+}
+
+.cards-silver {
+	padding: 40px 40px 30px 40px;
+	position: relative;
+}
+
+.last-section-cards__title__silver {
+	position: absolute;
+	top: 40px;
+	right: 40px;
+	font-family: 'EurostileRound';
+	font-weight: 500;
+	font-size: 28px;
+	line-height: 42px;
+	/* color: #222123; */
+	text-transform: uppercase;
+}
+
+.last-section-themes__list {
+	position: relative;
+	row-gap: 41px;
+	column-gap: 50px;
+}
+
+.last-section-themes__list {
+	flex-wrap: wrap;
+}
+
+.themes-list__one {
+	padding: 66px 37px;
+	width: 413px;
+	height: 200px;
+	border-radius: 20px;
+	background-color: #222123;
+}
+
+.themes-list__text {
+	width: 338px;
+	font-family: 'EurostileRound';
+	font-weight: 500px;
+	font-size: 24px;
+	line-height: 34px;
+	text-align: center;
+	text-transform: capitalize;
+}
+
+.themes-list__two {
+	padding: 30px 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	min-height: 400px;
+	width: 413px;
+	background-image: url(../img/on-holliday.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	border-radius: 20px;
+}
+
+.themes-list__title {
+	margin-bottom: 14px;
+	font-family: 'EurostileRound';
+	font-weight: 500;
+	font-size: 28px;
+	line-height: 28px;
+	text-transform: capitalize;
+}
+
+.themes-list__descr {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	text-transform: capitalize;
+}
