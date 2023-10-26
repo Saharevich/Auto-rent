@@ -592,3 +592,19 @@ p {
 	line-height: 24px;
 	text-transform: capitalize;
 }
+
+.themes-list__three {
+	padding-left: 30px;
+	padding-right: 50px;
+	padding-bottom: 20px;
+	visibility: inherit;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	width: 413px;
+	height: 400px;
+	border-radius: 20px;
+	background-image: url(../img/for-ny.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
